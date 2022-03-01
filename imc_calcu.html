@@ -11,36 +11,54 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- 300 siize ( light)-->
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- 500 size-->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- 900 size-->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+
        <!-- Google font end -->
     </head>
     <body>
         <!-- Nav var div -->
+        <img id = "character_img" src="resources/Sample 11.png" alt="">
        <div id="nav_div">
-           
-
+           <div id="main_title_div"><p id = "main_title">IMCalculator</p></div>
        </div> 
         
        <!-- Main div left -->
        <div id="left_div">
             <!-- First square (weight) -->
             <div class="input_values_square" id = "div_weight">
-
+                <p>Weight</p>
+                <input type="number" placeholder="Your Weight">
+                <button>Next</button>
             </div>
             
             <!-- Second square (Height) -->
             <div class="input_values_square" id = "div_height">
-
+                <p>Height</p>
+                <input type="number" placeholder="Your Height">
+                <button>Calculate</button>
             </div>
 
             <!-- Third square (Restart) -->
             <div class="input_values_square" id = "div_restart">
-
-            </div>
+                <p>Again</p>
+                <button>Again</button>
+                </div>
+            
        </div>
 
        <!-- Main div right -->
        <div id = "right_div">
+            <div id = "div_result">
 
+            </div>
        </div>
     </body>
 </html>

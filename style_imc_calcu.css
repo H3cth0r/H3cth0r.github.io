@@ -1,3 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: #EEEDDE;
+    font-family: 'Work Sans', sans-serif;
 }
+
+#character_img{
+    position: absolute;
+    width: auto;
+    height: 50vh;
+    transform: translate(30vw, 50vh);
+}
+
+#nav_div{
+    width: 100vw;
+    height: 15vh;
+    /* background-color: aqua; */
+}
+
+#main_title{
+    color: #203239;
+    font-weight: 900;
+}
+#main_title_div{
+    position: absolute;
+    transform: translate(5vw, 9vh);
+}
+
+#left_div{
+    width: 50vw;
+    height:85vh;
+    /* background-color: blue;  */
+}
+
+#div_weight{
+    display: block;
+}
+#div_height{
+    display: none;
+}
+#div_restart{
+    display: none;
+}
+
+
+#right_div{
+    width: 50vw;
+    height: 85vh;
+    /* background-color: red; */
+    position: absolute;
+    transform: translate(50vw, -85vh);
+}
+
+
+div.input_values_square{
+    width: 25vw;
+    height: 50vh;
+    position: absolute;
+    transform: translate(5vw, 15vh);
+    background-color: #E0DDAA;
+    border-radius: 5%;
+}
+.input_values_square p{
+    color: #EEEDDE;
+    position: absolute;
+    transform: translate(9vw, 9vh);
+    font-weight:700;
+    font-size: xx-large; 
+}
+.input_values_square input{
+    background-color: #EEEDDE;
+    /* position: absolute; */
+    border: none;
+    outline: none;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 22px;
+    vertical-align:middle;
+    padding: 0 5%;
+    transform: translate(4vw, 22vh);
+    font-family: 'Work Sans';
+    font-size: 300;
+    text-align: center;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #203239;
+}
+
+
+
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	background: #E0DDAA;
+	margin: 10px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: -5px -5px 15px #f1eebb, 5px 5px 15px #cfcc99, inset 5px 5px 10px #f1eebb, inset -5px -5px 10px #cfcc99;
+	color: #cfcc99;
+	font-size: 16px;
+    position: relative;
+    transform: translate(7vw, 28vh);
+}
+
+button:hover {
+	box-shadow: -5px -5px 15px #cfcc99, 5px 5px 15px #f1eebb, inset 5px 5px 10px #cfcc99, inset -5px -5px 10px #f1eebb;
+	font-size: 15px;
+	transition: 500ms;
+    color: #EEEDDE;
+}
+
+#div_result{
+    display: none;
+    position: absolute;
+    background: #EEEDDE;
+    width: 35vw;
+    height: 23vh;
+    transform: translate(5vw, 26vh);
+    border-radius: 10px;
+	box-shadow: -5px -5px 15px #fffeef, 5px 5px 15px #dddccd, inset 5px 5px 10px #fffeef, inset -5px -5px 10px #dddccd;
+    transition: 500ms;
+}
+
+/* 
+34
+51
+68
+
+207, 204, 153 == cfcc99
+224, 221, 170 == E0DDAA
+241, 238, 187 = f1eebb
+*/
+
+/* 
+221, 220, 205 ==
+238, 237, 222 == 
+255, 254, 239 ==
+*/
