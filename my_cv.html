@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="icon" href="resources/main_icon.png">
+       <!-- Google font start -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   <!-- 500 size-->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- 300 siize ( light)-->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+       <!-- Google font end -->
+      <title>HectorMiranda</title> 
+    </head>
+    
+    <body>
+        
+        <div class="center" id = "center" ><img src="resources/thats_me.jpeg" id = "main_img" ></div>
+        <div class= "chart_container" id = "chart_container">
+            <div id ="chart"></div>
+        </div>
+
+        <a style = "display: block;" href="https://github.com/H3cth0r">
+            <div class="social_networks_icon" ></div>
+        </a>
+
+        
+        <!-- table for display of imgs-->
+        <table class="display_img_table" id="img_one">
+            <tr>
+                <td><img src="resources/flight_data_project_001.png" alt=""></td>
+                <td><img src="resources/flight_data_project_002.png" alt=""></td>
+                <td><img src="resources/flight_data_project_003.png" alt=""></td>
+            </tr>
+        </table>
+        <table class="display_img_table" id = "img_two">
+            <tr>
+                <td><img src="resources/aerodromes_001.png" alt=""></td>
+                <td><img src="resources/aerodromes_002.png" alt=""></td>
+                <td><img src="resources/aerodromes_003.png" alt=""></td>
+            </tr>
+        </table>
+        <table class="display_img_table" id = "img_three">
+            <tr>
+                <td><img src="resources/whosthere_001.png" alt=""></td>
+                <td><img src="resources/whosthere_002.png" alt=""></td>
+                <td><img src="resources/whosthere_003.png" alt=""></td>
+            </tr>
+        </table>
+        <table class="display_img_table" id = "img_four">
+            <tr>
+                <td><img src="resources/f1_001.png" alt=""></td>
+                <td><img src="resources/f1_002.png" alt=""></td>
+                <td><img src="resources/f1_003.png" alt=""></td>
+            </tr>
+        </table>
+
+
+        <div class = "my_education">
+          <p id = 'level_school'>High School</p>
+          <p id = "name_school">Tec Milenio Campus Merida</p>  
+        </div>
+
+        
+        <!-- superior menu-->
+       <div id="menu_bar">
+           <!-- div for left upper name "Hector Miranda"-->
+           <div class="my_name_div"><p class="my_name" id="my_name_id">Héctor Miranda</p></div> 
+       
+        </div> <!-- inferior menu end-->
+              
+        <!-- main part of the site -->
+        <!-- This part it is going to be divided into three columns (divs)-->
+       <div class="main_div">
+
+            <!-- Left columns -->
+            <div class="left_column">
+                <div class="scroll">
+                    <div class="info_div" id="map">
+                        <div class="location_info">
+                            <br>
+                            <p class="custom_title">Greetings!</p>
+                            <p> My name is Héctor Miranda, a 21-year-old Mexican fella,
+                                currently going through computer technologies engineering.
+                                I’m proud of being part of the best university of Mexico, Tecnologico 
+                                de Monterrey. Since I’m a kid I’ve been so passionate about science, 
+                                space, finance, aerospace technologies, and overall, computer science. As a kid 
+                                I would think of computers as pure magic; nowadays, one of my objectives
+                                as a professional is to make magic with computers. I started my journey
+                                in the coding world when I was in Junior High; by Highschool
+                                I would rather be coding than listening to my professors during class. Right now I’m
+                                 aiming to the development of tools for the financial and aerospace industrys.</p>
+
+                            <br>
+                            <p class="custom_title">Hobbies</p>
+                            <ul>
+                                <li>Marathon Running.</li>
+                                <li>Cooking.</li>
+                                <li>Codign.</li>
+                                <li>Playing Acustic Guitar.</li>
+                            </ul>
+                            <br>
+                            <p>I've also...</p>
+                            <ul>
+                                <li>I’ve been on the Yucatan State Rowing team.</li>
+                                <li>I’ve run about 5 marathons since I was 15 years old, where I've gotten 1rsts, 2nds and 4ths places in my category.</li>
+                                <li>I've also practiced horse riding.</li>
+                                <li>I’ve learned languages like German and French. In the case of German, for about 5 years and French since I was a kid.</li>
+                                <li>I went on an exchange to Japan, to learn some Japanese.</li>
+                                <li>I’ve taken some courses on paragliding.</li>
+                                <li>I've participated on my High School Robotics team.</li>
+                                <li>I've done some boulder and rock climbing, in cenotes and Belize.</li>
+                            </ul>
+                            <br>
+                            <p>And some other stuff...</p>
+
+                            <br>
+                            <p class="custom_title">Projects</p>
+                            <p>These are some of my projects, please hover over the information, so the images get presented:</p>
+                            <br>
+                            <ul>
+                                <li id = "project_001" onmouseover="document.getElementById('img_one').style.display = 'block';document.getElementById('img_one').style.animation = 'fadeInAnimation ease 3s'" onmouseout="document.getElementById('img_one').style.display = 'none';">
+                                    <p>Flight Tracker Data Processor</p>
+                                    <p>This is a small program that scrapes flight data of a selected flight. With this program we can gather the whole log data and registered points of a flight. The reason I created this program, is por gathering a robust data set, for using machine learning and creating routes for small airplanes, depending of maximum high, velocity, power, etc. The machine learning part is still on development. This is just a part of a bigger personal project.</p>
+                                </li>
+                                <li id = "project_002" onmouseover="document.getElementById('img_two').style.display = 'block';document.getElementById('img_two').style.animation = 'fadeInAnimation ease 3s'" onmouseout="document.getElementById('img_two').style.display = 'none';">
+                                    <p>Aerodromes locations in México</p>
+                                    <p>I developed this program last year, it is intended to present all available aerodromes or landing tracks in México, or just the registered one. For this I downloaded a database of all these aerodromes. I used javascript and node.js for the development,  and it was presented on an openstreetmap map. This project can still be optimized, for grouping the aerodromes depending on the zone in México. </p>
+                                </li>
+                                <li id= "project_003" onmouseover="document.getElementById('img_three').style.display = 'block';document.getElementById('img_three').style.animation = 'fadeInAnimation ease 3s'" onmouseout="document.getElementById('img_three').style.display = 'none';">
+                                    <p>TellMeWhoseThere</p>
+                                    <p>This is a python project that lets me register and know who is logged into my home network. I implemented this on a raspberry pi. This way I can have a registration on my network of who, when and how much time the user was logged into my local-network.</p>
+                                </li>
+                                <li id = "project_004" onmouseover="document.getElementById('img_four').style.display = 'block';document.getElementById('img_four').style.animation = 'fadeInAnimation ease 3s'" onmouseout="document.getElementById('img_four').style.display = 'none';">
+                                    <p>3D representation of F1-Matlab</p>
+                                    <p>This  was a project I developed in my first semester for my physics subject, where I had to develop a 2d animation of a car, moving on a track. The interesting thing about this project is that we developed a 3D animation, and created structures with graphs. I basically developed a game engine. </p>
+                                </li>
+                            </ul><br>
+                            <p>There are lots of other projects and personal developments. For example, last summer I worked in an architecture office, where I worked on the development of the analysis of measurements, using python. You can go and check some of my github repos, for further information.</p>
+
+                            <br>
+                            <p class="custom_title">Movies</p>
+                            <ul>
+                                <li>The Goddather.</li>
+                                <li>Exmachina.</li>
+                                <li>Interstellar.</li>
+                                <li>Dune.</li>
+                                <li>Wes Anderson Movies.</li>
+                            </ul>
+
+                            <br>     
+                            <p class="custom_title">Location</p>
+                            <p>Currently I reside in Mexico City.</p>
+                        </div>
+                        <iframe width="370vw" height="220vh" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-99.57870483398439%2C19.176301302579176%2C-98.6956787109375%2C19.623185718036478&amp;layer=mapnik&amp;marker=19.39916655728978%2C-99.13732906803489" style="border: 1px solid black; border-radius: 3%;"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=19.3992&amp;mlon=-99.1373#map=11/19.3999/-99.1372"></a></small>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of Left column -->
+
+            <!-- center column -->
+            <div class="center_column">
+            </div>
+            <!-- end of center column -->
+
+            <!-- right column -->
+            <div class="right_column">
+                <ul>
+                    <li id = "list_french"><span>French:  75%</span></li>
+                    <li id = "list_english"><span>English: 95%</span></li>
+                    <li id = "list_cpp"><span>C++:     85%</span></li>
+                    <li id = "list_python"><span>Python:  95%</span></li>
+                    <li id = list_matlab><span>Matlab:  90%</span></li>
+                    <li id = "list_vim"><span>VIM:     70%</span></li> 
+                </ul>
+            </div>
+            <!-- end of right column-->
+
+       </div>
+       <!-- end of main div-->
+
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <script src = "main.js"></script>
+
+
+    </body>
+</html>
