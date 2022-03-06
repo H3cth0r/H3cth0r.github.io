@@ -23,6 +23,7 @@ body{
 #main_title{
     color: #203239;
     font-weight: 900;
+    font-size: large;
 }
 #main_title_div{
     position: absolute;
@@ -115,7 +116,7 @@ button:hover {
 }
 
 #div_result{
-    display: none;
+    display: block;
     position: absolute;
     background: #EEEDDE;
     width: 35vw;
