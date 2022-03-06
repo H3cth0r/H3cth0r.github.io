@@ -23,7 +23,7 @@ body{
 #main_title{
     color: #203239;
     font-weight: 900;
-    font-size: large;
+    font-size: 300vh;
 }
 #main_title_div{
     position: absolute;
