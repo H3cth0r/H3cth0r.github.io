@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <!-- Jquery import  -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="the_functions.js"></script>
        <!-- Google font start -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   <!-- 500 size-->
@@ -30,21 +33,21 @@
             <!-- First square (weight) -->
             <div class="input_values_square" id = "div_weight">
                 <p>Weight</p>
-                <input type="number" placeholder="Your Weight">
-                <button>Next</button>
+                <input type="number" id="input_weight_data" placeholder="Your Weight">
+                <button onclick="next_button()">Next</button>
             </div>
             
             <!-- Second square (Height) -->
             <div class="input_values_square" id = "div_height">
                 <p>Height</p>
-                <input type="number" placeholder="Your Height">
-                <button>Calculate</button>
+                <input type="number" id = "input_height_data"placeholder="Your Height">
+                <button onclick="calculate_button()">Calculate</button>
             </div>
 
             <!-- Third square (Restart) -->
             <div class="input_values_square" id = "div_restart">
                 <p>Again</p>
-                <button>Again</button>
+                <button onclick="try_again_button()">Again</button>
                 </div>
             
        </div>
@@ -52,8 +55,10 @@
        <!-- Main div right -->
        <div id = "right_div">
             <div id = "div_result">
-
+                <p id = "div_result_text">Result</p>
+                <p id = "div_result_number">Number Result</p>
             </div>
        </div>
+
     </body>
 </html>
