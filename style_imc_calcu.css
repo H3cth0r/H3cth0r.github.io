@@ -27,7 +27,7 @@ body{
     font-size: 100%;
 }
 #main_title_div{
-    position: absolute;
+    position: relative;
     transform: translate(5vw, 9vh);
 }
 
