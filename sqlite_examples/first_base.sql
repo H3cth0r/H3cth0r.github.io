@@ -13,3 +13,7 @@ CREATE TABLE "Party" (
 	FOREIGN KEY("user") REFERENCES "Users"("id"),
 	PRIMARY KEY("id")
 );
+
+
+SELECT Users.first_name, Party.date, Party.score FROM Users;
+SELECT Users.first_name, Party.date, Party.score FROM Users JOIN Party ON Users.id = Party.user; -- clausula on permite establecer condición. 
