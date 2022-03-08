@@ -1,7 +1,14 @@
 *{
     margin: 0;padding: 0;
 }
-
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 html,body
 {
@@ -27,6 +34,7 @@ html,body
     font-size: 100%;
 }
 #main_title_div{
+    animation: fadeInAnimation ease 3s;
     position: relative;
     transform: translate(5vw, 9vh);
 }
@@ -39,6 +47,7 @@ html,body
 
 #div_weight{
     display: block;
+    animation: fadeInAnimation ease 3s;
 }
 #div_height{
     display: none;
@@ -131,11 +140,15 @@ button:hover {
 
 #div_result_text{
     font-weight: 900;
-    font-size: 220%;
+    font-size: 300%;
     color: white;
+    position: relative;
+    transform: translate(7vw, 7vh);
 }
 #div_result_number{
     font-weight: 700;
+    position: relative;
+    transform: translate(9vw, 8vh);
 }
 
 /* 
