@@ -4,6 +4,7 @@ var weight;
 var height;
 var result;
 var selection;
+var the_color;
 
 const phrases = ["Not quite great.",
                  "You doing fine.",
@@ -31,22 +32,27 @@ function calculate_button(){
     switch(true){
         case (result<=18):
             selection = phrases[0];
+            the_color = '#d85145';
         break;
         case (result > 18 && result <= 25):
             selection = phrases[1];
+            the_color = '#1aa260';
         break;
         case (result > 25 && result <= 30):
             selection = phrases[2];
+            the_color = '#ffce42'
         break;
         case (result > 30 && result <= 40):
             selection = phrases[3];
+            the_color = '#d85145';
         break;
         case (result > 40):
             selection = phrases[3];
+            the_color = '#d85145';
         break;
     }
 
-    $("#div_result_text").text(selection);
+    $("#div_result_text").text(selection).css("color", the_color);
     $("#div_result_number").text("IMC= " + result.toFixed(2));
     console.log(selection);
     console.log(result);
