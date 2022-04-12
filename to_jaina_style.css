@@ -1,0 +1,77 @@
+@import "helvetica_font/stylesheet.css";
+
+* {
+    font-family: "Helvetica Now Display", sans-serif !important;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+}
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 751px) {
+    .navbar-div p{
+        font-size: 100%;
+    }
+    .letter-div div{
+        width: 80vw !important;
+    }
+    .text-title{
+        width: 80vw !important;
+    }
+}
+
+
+
+
+
+/* Main style */
+
+
+/* Nabvar style */
+.navbar-div{
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 5rem;
+    background-color: transparent;
+}
+
+.navbar-div p{
+    background: transparent;
+    font-weight: 500;
+    margin: 2rem;
+}
+
+
+/* Letter div style */
+.letter-div{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+
+.letter-div div{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 50vw;
+    text-align: justify;
+}
+
+.text-title{
+    font-weight: 500;
+    font-size: xx-large;
+    width: 50vw;
+}
+
+.text-top-spacer{
+    width: auto;
+    height: 5rem;
+}
